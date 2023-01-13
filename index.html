@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="icon" href="src/rcrprint.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RCR print</title>
+	
+	<style>
+	
+		.bar
+			{
+				width: 95%;
+				margin: auto;
+				padding: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+		.logo
+			{
+				width: 90px;
+				cursor: pointer;
+			}
+
+		.bar ul li
+			{
+				list-style: none;
+				display: inline-block;
+				margin: 5px;
+			}
+
+		.img
+			{
+				height: 30px; 
+				width: 30px;
+			}
+
+		body
+		{
+			background-image: linear-gradient(rgba(5, 0, 0, 0.85),rgba(255,255,200, 0.30)),url(src/Tipografie.webp);
+			margin: 0px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			backdrop-filter: blur(3px);
+		}
+
+		h1
+			{
+				text-align: center;
+				color: white;
+				font-style: italic;
+				font-family: Goudy Old Style, serif;
+				font-size: 70px;
+				margin-top: 0px;
+			}
+
+		h2
+			{
+				color: white;
+				font-size: 40px;
+				font-family: serif;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+
+		.despre
+			{
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: row;
+				align-items: center;
+				margin: 25px;
+				min-width: 70%;
+				justify-content: center;
+				padding: 5px;
+
+			}	
+
+		.imgdespre img
+			{
+					max-width: 500px;
+					max-height: 300px;
+
+					margin: 5px;  
+			}
+
+		.text
+			{	font-family: serif;
+				font-size: 25px;
+				font-weight: 500;
+				color: white;
+				width: 50%;
+				text-align: center;
+				margin: 5px;  
+			}
+
+			.navbar
+		{
+			display: flex;
+		    flex-wrap: nowrap;
+		    justify-content: center;
+		    align-items: flex-start;
+		    align-content: center;
+		    overflow: hide;
+		    flex-direction: row;
+		    
+		    margin: 20px;
+		}
+
+		.navbar a
+		{
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			color: #F1F3CE;
+			padding: 10px;
+			width: 180px;
+			ont-family: serif;
+			font-size: 25px;
+			font-weight: 500;
+		}
+
+		.navbar a:hover
+		{
+			background-color: #90AFC5;
+			color: black;
+		}
+
+		.activ
+		{
+		background:  linear-gradient( 90deg, #2d2006,#70500f,#e0a01f,#eabe66,#332200);
+		background-size: 400% 400%;
+		animation: change 15s ease-in-out infinite;
+		}
+
+		@keyframes change
+		{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		}
+
+		h3
+			{
+				color: white;
+				text-align: center;
+				font-family: serif;
+				font-size: 25px;
+				margin-top: 10px;
+			}
+
+		h4
+			{
+				color: white;
+				text-align: center;
+				font-family: serif;
+				font-size: 20px;
+				margin-top: 0px;
+			}
+
+		h5
+			{
+				color: red;
+				text-align: center;
+				font-family: serif;
+				font-size: 20px;
+				margin-top: 0px;
+				font-weight: bold;
+			}
+		
+
+
+		@media screen and (max-width: 1000px)
+		{
+			.navbar a
+		{
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			color: #F1F3CE;
+			padding: 10px;
+			width: 100px;
+			ont-family: serif;
+			font-size: 25px;
+			font-weight: 500;
+		}
+		}
+
+
+		@media screen and (max-width: 600px)
+			{
+				.bar
+			{
+				width: 95%;
+				margin: auto;
+				padding: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+		.logo
+			{
+				width: 50px;
+				cursor: pointer;
+			}
+
+		.bar ul li
+			{
+				list-style: none;
+				display: inline-block;
+				margin: 5px;
+			}
+
+		.img
+			{
+				height: 20px; 
+				width: 20px;
+			}
+
+		h1
+			{
+				text-align: center;
+				color: white;
+				font-style: italic;
+				font-family: Goudy Old Style;
+				font-size: 25px;
+				margin-top: 0px;
+			}
+
+		h2
+			{
+				color: white;
+				font-size: 30px;
+				font-family: Goudy Old Style;
+			}
+
+		.despre
+			{
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+				flex-direction: column;
+
+				
+			}	
+
+		.imgdespre img
+			{
+					max-width: 250px;
+					max-height: 250px;
+					align-items: center;
+					margin: 5px;  
+			}
+
+		.text
+			{
+				min-width: 90%; 
+				font-family: serif;
+				font-size: 16px;
+				font-weight: 500;
+				color: white;
+				width: 50%;
+				text-align: center;
+				margin: 5px;  
+
+			}
+				.navbar
+		{
+			display: flex;
+		    flex-wrap: nowrap;
+		    justify-content: center;
+		    align-items: center;
+		    align-content: center;
+		    overflow: hide;
+		    flex-direction: column;
+		    
+		    margin: 20px;
+		}
+
+		.navbar a
+		{	
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			color: #F1F3CE;
+			padding: 10px;
+			width: 150px;
+			ont-family: serif;
+			font-size: 25px;
+			font-weight: 500;
+
+			
+		}
+
+		.navbar a:hover
+		{
+			background-color: #90AFC5;
+			color: black;
+		}
+
+
+		.activ
+		{
+			display: inline-block;
+			background:  linear-gradient( 90deg, #2d2006,#70500f,#e0a01f,#eabe66,#332200);
+			background-size: 400% 400%;
+			animation: change 15s ease-in-out infinite;
+		}
+
+		@keyframes change
+		{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		
+		}
+
+		h3
+			{
+				color: white;
+				text-align: center;
+				font-family: serif;
+				font-size: 20px;
+				margin-top: 10px;
+			}
+
+		h4
+			{
+				color: white;
+				text-align: center;
+				font-family: serif;
+				font-size: 15px;
+				margin-top: 0px;
+			}
+
+		h5
+			{
+				color: red;
+				text-align: center;
+				font-family: serif;
+				font-size: 15px;
+				margin-top: 0px;
+				font-weight: bold;
+			}
+		}
+
+		::-webkit-scrollbar
+		{
+			width: 3px;	
+		}
+
+		::-webkit-scrollbar-thumb
+		{
+			background-color:  #2d2006;
+		}
+
+		::-webkit-scrollbar-track
+		{
+			background-color: #332200;
+		}
+
+		::-webkit-scrollbar-thumb:hover
+		{
+			background-color: #e0a01f;
+		}
+	</style>
+</head>
+
+
+<body>
+
+
+	<div class="bar">
+		<a href="index.html"><img src="src/RCRprint.png" class="logo"></a>
+			<ul>
+				<li><a href="cos.php"><img src="src/cos.png" class="img"></a></li>
+				<li><a href="log.php"><img src="src/cont_client.png" class="img"></a></li>			
+			</ul>
+	</div>
+
+	<b><h1>Bine ati venit la R.C.R. Print</h1></b>
+
+<div class="navbar">
+	<div><div class="activ"><a href="index.html">Acasa</a></div></div>
+	<div><a href="shop.php">Produse</a></div>
+	<div><a href="Termeniconditi.html">Termeni si conditii</a></div>
+	<div><a href="Contact.html">Contact</a></div>
+</div>
+
+<div class="despre">
+	<div class="text">
+		<h2>Despre noi</h2><br />
+		Suntem in domeniu inca din anul 1997, putem realiza o gama variata de produse. Dispunem de experienta  ce ne permit sa oferim servicii pentru tipar offset, tipar digital si finisare. Realizam la tiraje mari, mijlocii si mici carte, calendare pentru birou, calendare de perete, flyere, pliante si carti de vizita. Experienta echipei de productie si utilajele performante ne ajuta sa oferim cea mai buna calitate, sa livram comenzile la timp si sa creem relatii permanente cu clientii nostri.
+	</div>
+
+	<div class="imgdespre">
+		<img src="src/echipanoastra.webp">
+	</div>
+</div>
+
+<center><h3>Consultanta</h3></center>
+<h4>Daca ai nevoie de o solutie pentru a realiza produsele tiparite in conditii foarte bune de calitate, dar vrei sa te incadrezi intr-un anumit buget, iti oferim in mod gratuit sfaturi profesioniste.</hf4>
+<center><h3>Finisaje</h3></center>
+<h4>Realizam toate finisajele necesare: plastifiere lucioasa sau mata, brosare, legare, legatorie de arta, faltuire, biguire, stantare, gauriere, coasere fascicule, casesrare, lacuire UV selectiva; folio; timbru sec, etc.</h4>
+<center><h3>DTP</h3></center>
+<h4>In cazul in care ai mare parte din materialele pe care le doresti tiparite si mai ai nevoie doar de cineva care sa le aranjeze in pagina, poti apela la un specialist.</h4>
+<center><h3>Creatie</h3></center>
+<h4>Poti sa realizezi propriile modele cu ajutorul unui specialist pus la dispozitie de catre noi.</h4>
+<center><h3>Livrare</h3></center>
+<h5>Nu punem la dispozitie livrarea produselelor!</h5>
+</body>
+</html>		

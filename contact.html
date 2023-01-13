@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="src/rcrprint.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	
+	<style>
+	::-webkit-scrollbar
+		{
+			width: 3px;	
+		}
+
+		::-webkit-scrollbar-thumb
+		{
+			background-color:  #2d2006;
+		}
+
+		::-webkit-scrollbar-track
+		{
+			background-color: #332200;
+		}
+
+		::-webkit-scrollbar-thumb:hover
+		{
+			background-color: #e0a01f;
+		}
+		.bar
+			{
+				width: 95%;
+				margin: auto;
+				padding: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+		.logo
+			{
+				width: 90px;
+				cursor: pointer;
+			}
+
+		.bar ul li
+			{
+				list-style: none;
+				display: inline-block;
+				margin: 5px;
+			}
+
+		.img
+			{
+				height: 30px; 
+				width: 30px;
+			}
+
+		body
+		{
+			background-image: linear-gradient(rgba(5, 0, 0, 0.85),rgba(255,255,200, 0.30)),url(src/Tipografie.webp);
+			margin: 0px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			backdrop-filter: blur(3px);
+		}
+
+		h1
+			{
+				text-align: center;
+				color: white;
+				font-style: italic;
+				font-family: Goudy Old Style, serif;
+				font-size: 70px;
+				margin-top: 0px;
+			}
+
+		h2
+			{
+				color: white;
+				font-size: 40px;
+				font-family: serif;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+
+		.despre
+			{
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: row;
+				align-items: center;
+				margin: 25px;
+				min-width: 70%;
+				justify-content: center;
+				padding: 5px;
+
+			}	
+
+		.imgdespre img
+			{
+					max-width: 500px;
+					max-height: 300px;
+
+					margin: 5px;  
+			}
+
+		.text
+			{	font-family: serif;
+				font-size: 25px;
+				font-weight: 500;
+				color: white;
+				width: 50%;
+				text-align: center;
+				margin: 5px;  
+			}
+
+			.navbar
+		{
+			display: flex;
+		    flex-wrap: nowrap;
+		    justify-content: center;
+		    align-items: flex-start;
+		    align-content: center;
+		    overflow: hide;
+		    flex-direction: row;
+		    
+		    margin: 20px;
+		}
+
+		.navbar a
+		{
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			color: #F1F3CE;
+			padding: 10px;
+			width: 180px;
+			ont-family: serif;
+			font-size: 25px;
+			font-weight: 500;
+		}
+
+		.navbar a:hover
+		{
+			background-color: #90AFC5;
+			color: black;
+		}
+
+		.activ
+		{
+		background:  linear-gradient( 90deg, #2d2006,#70500f,#e0a01f,#eabe66,#332200);
+		background-size: 400% 400%;
+		animation: change 15s ease-in-out infinite;
+		}
+
+		@keyframes change
+		{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		}
+
+		@media screen and (max-width: 1000px)
+		{
+			.navbar a
+		{
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			color: #F1F3CE;
+			padding: 10px;
+			width: 100px;
+			ont-family: serif;
+			font-size: 25px;
+			font-weight: 500;
+		}
+		}
+
+		iframe
+		{
+			width: 600px;
+			height: 450px;
+		}
+		p
+			{
+				margin-bottom: 30px;
+				margin: 100px;
+				font-family: serif;
+				font-size: 26px;
+				color: white;
+			}
+
+			a
+			{
+				text-decoration: none;
+				color: white;
+			}
+@media screen and (max-width: 600px)
+			{
+				p
+			{
+				margin-bottom: 20px;
+				margin: 50px;
+				font-family: serif;
+				font-size: 26px;
+				color: white;
+			}
+				.bar
+			{
+				width: 95%;
+				margin: auto;
+				padding: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+		.logo
+			{
+				width: 50px;
+				cursor: pointer;
+			}
+
+		.bar ul li
+			{
+				list-style: none;
+				display: inline-block;
+				margin: 5px;
+			}
+
+		.img
+			{
+				height: 20px; 
+				width: 20px;
+			}
+
+		.despre
+			{
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+				flex-direction: column;
+
+				
+			}	
+
+		.imgdespre img
+			{
+					max-width: 250px;
+					max-height: 250px;
+					align-items: center;
+					margin: 5px;  
+			}
+
+		.text
+			{
+				min-width: 90%; 
+				font-family: serif;
+				font-size: 16px;
+				font-weight: 500;
+				color: white;
+				width: 50%;
+				text-align: center;
+				margin: 5px;  
+
+			}
+				.navbar
+		{
+			display: flex;
+		    flex-wrap: nowrap;
+		    justify-content: center;
+		    align-items: center;
+		    align-content: center;
+		    overflow: hide;
+		    flex-direction: column;
+		    
+		    margin: 20px;
+		}
+
+		.navbar a
+		{	
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			color: #F1F3CE;
+			padding: 10px;
+			width: 150px;
+			ont-family: serif;
+			font-size: 25px;
+			font-weight: 500;
+
+			
+		}
+
+		.navbar a:hover
+		{
+			background-color: #90AFC5;
+			color: black;
+		}
+
+
+		.activ
+		{
+			display: inline-block;
+			background:  linear-gradient( 90deg, #2d2006,#70500f,#e0a01f,#eabe66,#332200);
+			background-size: 400% 400%;
+			animation: change 15s ease-in-out infinite;
+		}
+
+		@keyframes change
+		{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		
+		}
+		iframe
+		{
+			width: 400px;
+			height: 200px;
+		}
+	}
+	
+</style>
+</head>
+
+
+<body>
+
+	<div class="bar">
+		<a href="index.html"><img src="src/RCRprint.png" class="logo"></a>
+			<ul>
+				<li><a href="cos.php"><img src="src/cos.png" class="img"></a></li>
+				<li><a href="log.php"><img src="src/cont_client.png" class="img"></a></li>			
+			</ul>
+	</div>
+
+	<div class="navbar">
+	<div><a href="index.html">Acasa</a></div>
+	<div><a href="shop.php">Produse</a></div>
+	<div><a href="Termeniconditi.html">Termeni si conditii</a></div>
+	<div><div class="activ"><a href="Contact.html">Contact</a></div></div>
+</div>
+
+<center>
+<p>Email: rcrprint.tipografie@gmail.com<br />
+Telefon: <a href="tel:07777777777">07777777777</a><br />
+Adresa: Bulevardul Dimitrie Pompeiu 10, Bucuresti<br />
+<br /></p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.6349349245866!2d26.12244805152548!3d44.481655278999035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f880b09d03c3%3A0x9d185e63f5e31476!2sRCR%20PRINT%20S.R.L.!5e0!3m2!1sro!2sro!4v1656951882948!5m2!1sro!2sro" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</center>
+</body>
+
+</html>

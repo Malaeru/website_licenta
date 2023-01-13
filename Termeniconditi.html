@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Termeni si conditii</title>
+	<style>
+	
+		.bar
+			{
+				width: 95%;
+				margin: auto;
+				padding: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+		.logo
+			{
+				width: 90px;
+				cursor: pointer;
+			}
+
+		.bar ul li
+			{
+				list-style: none;
+				display: inline-block;
+				margin: 5px;
+			}
+
+		.img
+			{
+				height: 30px; 
+				width: 30px;
+			}
+
+		body
+		{
+			background-image: linear-gradient(rgba(5, 0, 0, 0.85),rgba(255,255,200, 0.30)),url(src/Tipografie.webp);
+			margin: 0px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			backdrop-filter: blur(3px);
+		}
+.navbar
+		{
+			display: flex;
+		    flex-wrap: nowrap;
+		    justify-content: center;
+		    align-items: flex-start;
+		    align-content: center;
+		    overflow: hide;
+		    flex-direction: row;
+		    
+		    margin: 20px;
+		}
+
+		.navbar a
+		{
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			color: #F1F3CE;
+			padding: 10px;
+			width: 180px;
+			ont-family: serif;
+			font-size: 25px;
+			font-weight: 500;
+		}
+
+		.navbar a:hover
+		{
+			background-color: #90AFC5;
+			color: black;
+		}
+
+		.activ
+		{
+		background:  linear-gradient( 90deg, #2d2006,#70500f,#e0a01f,#eabe66,#332200);
+		background-size: 400% 400%;
+		animation: change 15s ease-in-out infinite;
+		}
+
+		@keyframes change
+		{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		}
+
+		ol
+		{
+			color: white;
+			font-family: serif;
+			font-weight: 3px;
+			font-size: 22px;
+			padding: 50px;
+		}
+
+@media screen and (max-width: 1000px)
+		{
+			.navbar a
+		{
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			color: #F1F3CE;
+			padding: 10px;
+			width: 100px;
+			ont-family: serif;
+			font-size: 25px;
+			font-weight: 500;
+		}
+		}
+
+
+		@media screen and (max-width: 600px)
+			{
+				.bar
+			{
+				width: 95%;
+				margin: auto;
+				padding: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+		.logo
+			{
+				width: 50px;
+				cursor: pointer;
+			}
+
+		.bar ul li
+			{
+				list-style: none;
+				display: inline-block;
+				margin: 5px;
+			}
+
+		.img
+			{
+				height: 20px; 
+				width: 20px;
+			}
+		.navbar
+		{
+			display: flex;
+		    flex-wrap: nowrap;
+		    justify-content: center;
+		    align-items: center;
+		    align-content: center;
+		    overflow: hide;
+		    flex-direction: column;
+		    
+		    margin: 20px;
+		}
+
+		.navbar a
+		{	
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			color: #F1F3CE;
+			padding: 10px;
+			width: 150px;
+			ont-family: serif;
+			font-size: 25px;
+			font-weight: 500;
+
+			
+		}
+
+		.navbar a:hover
+		{
+			background-color: #90AFC5;
+			color: black;
+		}
+
+
+		.activ
+		{
+			display: inline-block;
+			background:  linear-gradient( 90deg, #2d2006,#70500f,#e0a01f,#eabe66,#332200);
+			background-size: 400% 400%;
+			animation: change 15s ease-in-out infinite;
+		}
+
+		@keyframes change
+		{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		
+		}
+</style>
+</head>
+<body>
+	<div class="bar">
+		<a href="index.html"><img src="src/RCRprint.png" class="logo"></a>
+			<ul>
+				<li><a href="cos.php"><img src="src/cos.png" class="img"></a></li>
+				<li><a href="log.php"><img src="src/cont_client.png" class="img"></a></li>			
+			</ul>
+	</div>
+
+
+
+<div class="navbar">
+	<div><a href="index.html">Acasa</a></div>
+	<div><a href="shop.php">Produse</a></div>
+	<div><div class="activ"><a href="Termeniconditi.html">Termeni si conditii</a></div></div>
+	<div><a href="Contact.html">Contact</a></div>
+</div>
+
+<ol>
+		<li>Beneficiarul isi asuma responsabilitatea pentru corectitudinea datelor inscrise.</li>
+		<li>Beneficiarul trebuie să predea machetele si materialele necesare pentru executarea lucrărilor tipografice la termenul stabilit de comun acord cu Prestatorul. Predarea machetelor se va face in unul din formatele digitale, conform solicitarii Prestatorului si va include toate elementele necesare realizarii lucrarii (fonturi, imagini, fisiere sursa, indicatii culori speciale, etc).</li>
+		<li>Beneficiarul trebuie sa raspunda la solicitare pentru a clarifica eventualele probleme privind realizarea lucrarilor comandate.</li>
+		<li>Prestatorul garanteaza Beneficiarului ca orice comanda emisa de Beneficiar si acceptata de Prestator va fi executata in conformitate cu standardele de calitate in domeniu (ISO 12647-1, ISO 12647-2) si calitatea finisarii lucrarilor va fi conforma cu standardele din industria poligrafica.</li>
+		<li>Beneficiarul trebuie să plătească prestatorului  suma convenită în baza facturilor fiscale.</li>
+</ol>
+
+
+</body>
+</html>
