@@ -14,16 +14,13 @@
 	<table  align="center">
 		<tr><td><img src="src/factura_sigla.png" width="150px" height="100px"></td></tr>
 		<tr><td colspan="3">SC R.C.R. PRINT SRL<br />
-Nr.Ord.Reg.Com./An: J40/7855/1997<br />
-C.U.I.: RO9865944<br />
-Sediul social: Str. Prometeu, nr. 12-14,<br />
-Bl. 12E Sc. 3, et. 3, ap. 41, Sector 1, București<br />
-Sediul de activitate: Bd. Dimitrie Pompei 10,<br />
-Sector 2, Bucureşti<br />
-Cont: RO46RZBR0000060005064808<br />
-Banca: Raiffeisen Bank - Ag. Pipera<br />
-Cont: RO89TREZ7015069XXX004321<br />
-Banca: Trezorerie Sector 1<br /></td>
+Nr.Ord.Reg.Com./An: .........<br />
+C.U.I.: .........<br />
+Sediul social: .........<br />
+Cont: .........<br />
+Banca: .........<br />
+Cont: .........<br />
+Banca: .........<br /></td>
 			
 			<?php session_start();include("conectare.php");
 			$id_client= $_GET['id_client'];
